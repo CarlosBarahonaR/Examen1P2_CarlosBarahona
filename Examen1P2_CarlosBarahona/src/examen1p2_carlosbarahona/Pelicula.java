@@ -70,7 +70,7 @@ public class Pelicula extends Servicio {
 
     @Override
     public String toString() {
-        return "Pelicula{" + "nombre4=" + nombre4 + ", duracion=" + duracion + ", fechaEstrenoCine=" + fechaEstrenoCine + ", fechaEstrenoStreaming=" + fechaEstrenoStreaming + ", plot=" + plot + '}';
+        return nombre4;
     }
     
     

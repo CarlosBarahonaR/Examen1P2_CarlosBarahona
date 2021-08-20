@@ -13,12 +13,17 @@ import java.util.ArrayList;
  */
 public class Servicio {
     
-    private String nombre;
-    private int precioMensual;
-    private String calificacion;
-    private String fechaLanzamiento;
-    private String empresaDueñaDelServicio;
-    private ArrayList productos;
+   public String nombre;
+   public int precioMensual;
+   public String calificacion;
+   public String fechaLanzamiento;
+   public  String empresaDueñaDelServicio;
+   public ArrayList productos;
+
+    public Servicio() {
+    }
+   
+   
 
     public Servicio(String nombre, int precioMensual, String calificacion, String fechaLanzamiento, String empresaDueñaDelServicio, ArrayList productos) {
         this.nombre = nombre;
@@ -79,7 +84,7 @@ public class Servicio {
 
     @Override
     public String toString() {
-        return "Servicio{" + "nombre=" + nombre + ", precioMensual=" + precioMensual + ", calificacion=" + calificacion + ", fechaLanzamiento=" + fechaLanzamiento + ", empresaDue\u00f1aDelServicio=" + empresaDueñaDelServicio + ", productos=" + productos + '}';
+        return nombre;
     }
     
     

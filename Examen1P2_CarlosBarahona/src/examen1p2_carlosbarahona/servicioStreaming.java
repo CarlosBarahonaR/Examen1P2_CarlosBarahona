@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import javax.swing.DefaultComboBoxModel;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -345,8 +346,18 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel13.setText("Bienvenido");
 
         jButton29.setText("Servicios");
+        jButton29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton29MouseClicked(evt);
+            }
+        });
 
         jButton30.setText("Series");
+        jButton30.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton30MouseClicked(evt);
+            }
+        });
 
         jButton31.setText("Miniseries");
 
@@ -358,6 +369,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         });
 
         jButton33.setText("Salir");
+        jButton33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton33MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jFrame1Layout = new javax.swing.GroupLayout(jFrame1.getContentPane());
         jFrame1.getContentPane().setLayout(jFrame1Layout);
@@ -406,6 +422,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         jButton35.setText("Servicios de streaming");
 
         jButton36.setText("Salir");
+        jButton36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton36MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
         jFrame2.getContentPane().setLayout(jFrame2Layout);
@@ -464,6 +485,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         });
 
         jButton4.setText("Crear");
+        jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton4MouseClicked(evt);
+            }
+        });
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
@@ -540,6 +566,12 @@ public class servicioStreaming extends javax.swing.JFrame {
 
         jLabel20.setText("Modificar servicio");
 
+        jComboBox3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox3ItemStateChanged(evt);
+            }
+        });
+
         jLabel22.setText("Nombre:");
 
         jLabel23.setText("Calificación:");
@@ -560,6 +592,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel26.setText("Empresa dueña del servicio:");
 
         jButton5.setText("Modificar");
+        jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton5MouseClicked(evt);
+            }
+        });
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -653,6 +690,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         jScrollPane1.setViewportView(jTable1);
 
         jButton6.setText("Eliminar");
+        jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton6MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog4Layout = new javax.swing.GroupLayout(jDialog4.getContentPane());
         jDialog4.getContentPane().setLayout(jDialog4Layout);
@@ -701,6 +743,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         });
 
         jButton7.setText("Crear");
+        jButton7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton7MouseClicked(evt);
+            }
+        });
         jButton7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton7ActionPerformed(evt);
@@ -984,6 +1031,11 @@ public class servicioStreaming extends javax.swing.JFrame {
         });
 
         jButton10.setText("Crear");
+        jButton10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton10MouseClicked(evt);
+            }
+        });
         jButton10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton10ActionPerformed(evt);
@@ -1446,10 +1498,30 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel33.setText("Series");
 
         jButton16.setText("Crear serie");
+        jButton16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton16MouseClicked(evt);
+            }
+        });
+        jButton16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton16ActionPerformed(evt);
+            }
+        });
 
         jButton17.setText("Modificar serie");
+        jButton17.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton17MouseClicked(evt);
+            }
+        });
 
         jButton18.setText("Listar y eliminar series");
+        jButton18.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton18MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog14Layout = new javax.swing.GroupLayout(jDialog14.getContentPane());
         jDialog14.getContentPane().setLayout(jDialog14Layout);
@@ -1486,10 +1558,25 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel34.setText("Servicios");
 
         jButton19.setText("Crear servicio");
+        jButton19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton19MouseClicked(evt);
+            }
+        });
 
         jButton20.setText("Modificar servicio");
+        jButton20.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton20MouseClicked(evt);
+            }
+        });
 
         jButton21.setText("Listar y eliminar servicios");
+        jButton21.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton21MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog15Layout = new javax.swing.GroupLayout(jDialog15.getContentPane());
         jDialog15.getContentPane().setLayout(jDialog15Layout);
@@ -1526,10 +1613,25 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel35.setText("Miniseries");
 
         jButton22.setText("Crear Miniserie");
+        jButton22.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton22MouseClicked(evt);
+            }
+        });
 
         jButton23.setText("Modificar Miniserie");
+        jButton23.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton23MouseClicked(evt);
+            }
+        });
 
         jButton24.setText("Listar y eliminar Miniseries");
+        jButton24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton24MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog16Layout = new javax.swing.GroupLayout(jDialog16.getContentPane());
         jDialog16.getContentPane().setLayout(jDialog16Layout);
@@ -1566,10 +1668,25 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel36.setText("Peliculas");
 
         jButton25.setText("Crear Pelicula");
+        jButton25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton25MouseClicked(evt);
+            }
+        });
 
         jButton26.setText("Modificar Pelicula");
+        jButton26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton26MouseClicked(evt);
+            }
+        });
 
         jButton27.setText("Listar y eliminar Peliculas");
+        jButton27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton27MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog17Layout = new javax.swing.GroupLayout(jDialog17.getContentPane());
         jDialog17.getContentPane().setLayout(jDialog17Layout);
@@ -1605,7 +1722,18 @@ public class servicioStreaming extends javax.swing.JFrame {
 
         jLabel37.setText("¿Con cual servicio desea hacer esto?");
 
+        jComboBox5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox5ItemStateChanged(evt);
+            }
+        });
+
         jButton28.setText("Ok");
+        jButton28.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton28MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jDialog18Layout = new javax.swing.GroupLayout(jDialog18.getContentPane());
         jDialog18.getContentPane().setLayout(jDialog18Layout);
@@ -1814,7 +1942,8 @@ public class servicioStreaming extends javax.swing.JFrame {
         }
 
         if (correcto == true) {
-            jFrame1.setExtendedState(MAXIMIZED_BOTH);
+            
+            jFrame1.setSize(896, 585);
             jFrame1.setLocationRelativeTo(null);
             jFrame1.setVisible(true);
             jTextField1.setText("");
@@ -1833,7 +1962,7 @@ public class servicioStreaming extends javax.swing.JFrame {
 
             }
             if (correcto == true) {
-                jFrame2.setExtendedState(MAXIMIZED_BOTH);
+                jFrame2.setSize(968, 513);
                 jFrame2.setLocationRelativeTo(null);
                 jFrame2.setVisible(true);
                 jTextField1.setText("");
@@ -1973,6 +2102,282 @@ public class servicioStreaming extends javax.swing.JFrame {
     private void jButton32ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton32ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton32ActionPerformed
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        // TODO add your handling code here:
+        ArrayList y = new ArrayList();
+        Servicio x = new Servicio(jTextField5.getText(), Integer.parseInt(jFormattedTextField1.getText()), jComboBox2.getSelectedItem().toString(), jTextField11.getText(), jTextField9.getText(), y);
+        
+        DefaultComboBoxModel dc
+                = (DefaultComboBoxModel) jComboBox3.getModel();
+        DefaultComboBoxModel dc2
+                = (DefaultComboBoxModel) jComboBox5.getModel();
+        dc.addElement(x);
+          dc2.addElement(x);
+        jComboBox3.setModel(dc);
+        jComboBox5.setModel(dc2);
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model2 = (DefaultTableModel) jTable6.getModel();
+        Object[] newrow = {
+            x.getNombre(),
+            x.getPrecioMensual(),
+            x.getCalificacion(),
+            x.getFechaLanzamiento(),
+            x.getEmpresaDueñaDelServicio(),};
+        model.addRow(newrow);
+        model2.addRow(newrow);
+        jTable1.setModel(model);
+        jTable6.setModel(model);
+        JOptionPane.showMessageDialog(null,
+                "Servicio creado excitosamente");
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jComboBox3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox3ItemStateChanged
+        // TODO add your handling code here:
+        
+         s
+                    = (Servicio) jComboBox3.getSelectedItem();
+            this.jTextField10.setText(
+                    (s.getNombre()));
+               this.jFormattedTextField2.setText(
+                    Integer.toString((s.getPrecioMensual())));
+         
+              this.jComboBox4.setSelectedItem(
+                    (s.getCalificacion()));
+            
+                this.jTextField12.setText(
+                    (s.getFechaLanzamiento()));
+                 this.jTextField13.setText(
+                    (s.getEmpresaDueñaDelServicio()));
+               
+    }//GEN-LAST:event_jComboBox3ItemStateChanged
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        // TODO add your handling code here:
+        s.setNombre(jTextField10.getText());
+        s.setPrecioMensual(Integer.parseInt(jFormattedTextField2.getText()));
+        s.setCalificacion(jComboBox4.getSelectedItem().toString());
+        s.setFechaLanzamiento(jTextField12.getText());
+        s.setEmpresaDueñaDelServicio(jTextField13.getText());
+    }//GEN-LAST:event_jButton5MouseClicked
+
+    private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
+        // TODO add your handling code here:
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        DefaultTableModel model2 = (DefaultTableModel) jTable6.getModel();
+        DefaultComboBoxModel dc
+                = (DefaultComboBoxModel) jComboBox3.getModel();
+        DefaultComboBoxModel dc2
+                = (DefaultComboBoxModel) jComboBox5.getModel();
+        dc.removeElementAt(jTable1.getSelectedRow());
+        dc2.removeElementAt(jTable1.getSelectedRow());
+        jComboBox3.setModel(dc);
+        jComboBox5.setModel(dc2);
+        model.removeRow(jTable1.getSelectedRow());
+        model2.removeRow(jTable1.getSelectedRow());
+        jTable1.setModel(model);
+        jTable6.setModel(model2);
+    }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton29MouseClicked
+        // TODO add your handling code here:
+          jDialog15.setSize(564, 412);
+             jDialog15.setLocationRelativeTo(null);
+        jDialog15.setVisible(true);
+    }//GEN-LAST:event_jButton29MouseClicked
+
+    private void jButton19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton19MouseClicked
+        // TODO add your handling code here:
+        jDialog15.setVisible(false);
+         jDialog2.setSize(547, 387);
+             jDialog2.setLocationRelativeTo(null);
+        jDialog2.setVisible(true);
+    }//GEN-LAST:event_jButton19MouseClicked
+
+    private void jButton20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton20MouseClicked
+        // TODO add your handling code here:
+         jDialog15.setVisible(false);
+         jDialog3.setSize(536, 407);
+             jDialog3.setLocationRelativeTo(null);
+        jDialog3.setVisible(true);
+    }//GEN-LAST:event_jButton20MouseClicked
+
+    private void jButton21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton21MouseClicked
+        // TODO add your handling code here:
+        jDialog15.setVisible(false);
+         jDialog4.setSize(877, 628);
+             jDialog4.setLocationRelativeTo(null);
+        jDialog4.setVisible(true);
+    }//GEN-LAST:event_jButton21MouseClicked
+
+    private void jButton22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton22MouseClicked
+        // TODO add your handling code here:
+         jDialog16.setVisible(false);
+          jDialog8.setSize(654, 402);
+             jDialog8.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+                  jDialog8.setVisible(true);
+        jDialog18.setVisible(true);
+    
+    }//GEN-LAST:event_jButton22MouseClicked
+
+    private void jButton16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton16MouseClicked
+        // TODO add your handling code here:
+        
+          jDialog14.setVisible(false);
+          
+           jDialog5.setSize(620, 387);
+             jDialog5.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+               jDialog5.setVisible(true);
+                    jDialog18.setVisible(true);
+      
+    }//GEN-LAST:event_jButton16MouseClicked
+
+    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton16ActionPerformed
+
+    private void jButton17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton17MouseClicked
+        // TODO add your handling code here:
+           jDialog14.setVisible(false);
+            jDialog6.setSize(536, 407);
+             jDialog6.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+               jDialog6.setVisible(true);
+        jDialog18.setVisible(true);
+      ;
+    }//GEN-LAST:event_jButton17MouseClicked
+
+    private void jButton18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton18MouseClicked
+        // TODO add your handling code here:
+               jDialog14.setVisible(false);
+                  jDialog7.setSize(877, 628);
+             jDialog7.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+        jDialog18.setVisible(true);
+    }//GEN-LAST:event_jButton18MouseClicked
+
+    private void jButton23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton23MouseClicked
+        // TODO add your handling code here:
+                jDialog16.setVisible(false);
+                                  jDialog9.setSize(649, 407);
+             jDialog9.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+                jDialog9.setVisible(true);
+        jDialog18.setVisible(true);
+     
+    }//GEN-LAST:event_jButton23MouseClicked
+
+    private void jButton24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton24MouseClicked
+        // TODO add your handling code here:
+         jDialog16.setVisible(false);
+                               jDialog10.setSize(877, 628);
+             jDialog10.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+             jDialog10.setVisible(true);
+        jDialog18.setVisible(true);
+    }//GEN-LAST:event_jButton24MouseClicked
+
+    private void jButton25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton25MouseClicked
+        // TODO add your handling code here:
+        jDialog17.setVisible(false);
+         jDialog11.setSize(687, 387);
+             jDialog11.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+              jDialog11.setVisible(true);
+        jDialog18.setVisible(true);
+    }//GEN-LAST:event_jButton25MouseClicked
+
+    private void jButton26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton26MouseClicked
+        // TODO add your handling code here:
+        jDialog17.setVisible(false);
+        jDialog12.setSize(536, 407);
+             jDialog12.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+                  jDialog12.setVisible(true);
+        jDialog18.setVisible(true);
+    }//GEN-LAST:event_jButton26MouseClicked
+
+    private void jButton27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton27MouseClicked
+        // TODO add your handling code here:
+        jDialog17.setVisible(false);
+         jDialog13.setSize(877, 628);
+             jDialog13.setLocationRelativeTo(null);
+         jDialog18.setSize(400, 300);
+             jDialog18.setLocationRelativeTo(null);
+               jDialog13.setVisible(true);
+        jDialog18.setVisible(true);
+    }//GEN-LAST:event_jButton27MouseClicked
+
+    private void jComboBox5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox5ItemStateChanged
+        // TODO add your handling code here:
+              servicioSeleccionado
+                    = (Servicio) jComboBox5.getSelectedItem();
+    }//GEN-LAST:event_jComboBox5ItemStateChanged
+
+    private void jButton28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton28MouseClicked
+        // TODO add your handling code here:
+        jDialog18.setVisible(false);
+    }//GEN-LAST:event_jButton28MouseClicked
+
+    private void jButton30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton30MouseClicked
+        // TODO add your handling code here:
+         jDialog14.setSize(564, 412);
+             jDialog14.setLocationRelativeTo(null);
+        jDialog14.setVisible(true);
+    }//GEN-LAST:event_jButton30MouseClicked
+
+    private void jButton36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton36MouseClicked
+        // TODO add your handling code here:
+        jFrame2.setVisible(false);
+    }//GEN-LAST:event_jButton36MouseClicked
+
+    private void jButton33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton33MouseClicked
+        // TODO add your handling code here:
+          jFrame1.setVisible(false);
+    }//GEN-LAST:event_jButton33MouseClicked
+
+    private void jButton10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton10MouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jButton10MouseClicked
+
+    private void jButton7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton7MouseClicked
+        // TODO add your handling code here:
+               ArrayList y = new ArrayList();
+        Serie x = new Serie(jTextField14.getText(), Integer.parseInt(jFormattedTextField3.getText()),  jTextField32.getText(), Integer.parseInt(jFormattedTextField9.getText()), Integer.parseInt(jFormattedTextField10.getText()));
+        
+        DefaultComboBoxModel dc
+                = (DefaultComboBoxModel) jComboBox6.getModel();
+     
+        dc.addElement(x);
+ 
+        jComboBox3.setModel(dc);
+  
+        DefaultTableModel model = (DefaultTableModel) jTable2.getModel();
+        DefaultTableModel model2 = (DefaultTableModel) jTable6.getModel();
+        Object[] newrow = {
+            x.getNombre(),
+            x.getPrecioMensual(),
+            x.getCalificacion(),
+            x.getFechaLanzamiento(),
+            x.getEmpresaDueñaDelServicio(),};
+        model.addRow(newrow);
+        model2.addRow(newrow);
+        jTable2.setModel(model);
+        jTable6.setModel(model);
+        JOptionPane.showMessageDialog(null,
+                "Serie creada excitosamente");
+    }//GEN-LAST:event_jButton7MouseClicked
 
     /**
      * @param args the command line arguments
@@ -2208,4 +2613,9 @@ public class servicioStreaming extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField8;
     private javax.swing.JTextField jTextField9;
     // End of variables declaration//GEN-END:variables
+    Servicio s;
+    Pelicula p;
+    Serie ss;
+    Miniseries ms;
+    Servicio servicioSeleccionado;
 }

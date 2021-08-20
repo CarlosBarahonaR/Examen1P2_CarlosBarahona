@@ -19,6 +19,15 @@ public class Miniseries extends Servicio {
     private int duracionPromedioCapitulo;
     private String descripcionBreve;
 
+     public Miniseries(String nombre3, int cantTemporadas, String genero, int duracionPromedioCapitulo, String descripcionBreve) {
+        
+        this.nombre3 = nombre3;
+        this.cantTemporadas = cantTemporadas;
+        this.genero = genero;
+        this.duracionPromedioCapitulo = duracionPromedioCapitulo;
+        this.descripcionBreve = descripcionBreve;
+    }
+    
     public Miniseries(String nombre3, int cantTemporadas, String genero, int duracionPromedioCapitulo, String descripcionBreve, String nombre, int precioMensual, String calificacion, String fechaLanzamiento, String empresaDueñaDelServicio, ArrayList productos) {
         super(nombre, precioMensual, calificacion, fechaLanzamiento, empresaDueñaDelServicio, productos);
         this.nombre3 = nombre3;
@@ -28,7 +37,7 @@ public class Miniseries extends Servicio {
         this.descripcionBreve = descripcionBreve;
     }
 
-    
+ 
     
     public String getNombre3() {
         return nombre3;
@@ -72,7 +81,7 @@ public class Miniseries extends Servicio {
 
     @Override
     public String toString() {
-        return "Miniseries{" + "nombre3=" + nombre3 + ", cantTemporadas=" + cantTemporadas + ", genero=" + genero + ", duracionPromedioCapitulo=" + duracionPromedioCapitulo + ", descripcionBreve=" + descripcionBreve + '}';
+        return nombre3;
     }
     
     

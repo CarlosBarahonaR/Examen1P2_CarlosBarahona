@@ -18,6 +18,15 @@ public class Serie extends Servicio {
     private String clasificacionEdad;
     private int añoEstreno;
     private int cantActoresInvolucrados;
+    
+    public Serie(String nombre2, int cantTemporadas, String clasificacionEdad, int añoEstreno, int cantActoresInvolucrados) {
+       
+        this.nombre2 = nombre2;
+        this.cantTemporadas = cantTemporadas;
+        this.clasificacionEdad = clasificacionEdad;
+        this.añoEstreno = añoEstreno;
+        this.cantActoresInvolucrados = cantActoresInvolucrados;
+    }
 
     public Serie(String nombre2, int cantTemporadas, String clasificacionEdad, int añoEstreno, int cantActoresInvolucrados, String nombre, int precioMensual, String calificacion, String fechaLanzamiento, String empresaDueñaDelServicio, ArrayList productos) {
         super(nombre, precioMensual, calificacion, fechaLanzamiento, empresaDueñaDelServicio, productos);
@@ -70,7 +79,7 @@ public class Serie extends Servicio {
 
     @Override
     public String toString() {
-        return "Serie{" + "nombre=" + nombre2 + ", cantTemporadas=" + cantTemporadas + ", clasificacionEdad=" + clasificacionEdad + ", a\u00f1oEstreno=" + añoEstreno + ", cantActoresInvolucrados=" + cantActoresInvolucrados + '}';
+        return nombre2;
     }
     
     
