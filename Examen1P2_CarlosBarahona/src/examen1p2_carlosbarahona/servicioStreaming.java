@@ -418,8 +418,18 @@ public class servicioStreaming extends javax.swing.JFrame {
         jLabel45.setText("Bienvenido");
 
         jButton34.setText("Mis suscripciones");
+        jButton34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton34MouseClicked(evt);
+            }
+        });
 
         jButton35.setText("Servicios de streaming");
+        jButton35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton35MouseClicked(evt);
+            }
+        });
 
         jButton36.setText("Salir");
         jButton36.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -2378,6 +2388,20 @@ public class servicioStreaming extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null,
                 "Serie creada excitosamente");
     }//GEN-LAST:event_jButton7MouseClicked
+
+    private void jButton34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton34MouseClicked
+        // TODO add your handling code here:
+        jDialog19.setSize(881, 623);
+        jDialog19.setLocationRelativeTo(null);
+        jDialog19.setVisible(true);
+    }//GEN-LAST:event_jButton34MouseClicked
+
+    private void jButton35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton35MouseClicked
+        // TODO add your handling code here:
+         jDialog20.setSize(910, 608);
+        jDialog20.setLocationRelativeTo(null);
+        jDialog20.setVisible(true);
+    }//GEN-LAST:event_jButton35MouseClicked
 
     /**
      * @param args the command line arguments

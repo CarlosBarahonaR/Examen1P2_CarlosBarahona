@@ -335,11 +335,17 @@
           <Properties>
             <Property name="text" type="java.lang.String" value="Mis suscripciones"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton34MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton35">
           <Properties>
             <Property name="text" type="java.lang.String" value="Servicios de streaming"/>
           </Properties>
+          <Events>
+            <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jButton35MouseClicked"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="jButton36">
           <Properties>
